@@ -1,0 +1,31 @@
+services:
+  web-app:
+    build:
+      context: ../
+      dockerfile: Dockerfile
+    image: web-app:latest
+    container_name: web-app
+    restart: always
+    env_file:
+      - ../.env
+    networks:
+      - web-network
+
+  nginx:
+    image: nginx:1.21-alpine
+    container_name: web-nginx
+    restart: always
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./nginx/certs:/etc/nginx/certs:ro
+    depends_on:
+      - web-app
+    networks:
+      - web-network
+
+networks:
+  web-network:
+    driver: bridge

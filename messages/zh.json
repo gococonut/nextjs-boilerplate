@@ -1,0 +1,39 @@
+{
+  "HomePage": {
+    "title": "你好世界！",
+    "about": "前往关于页面"
+  },
+  "LoginPage": {
+    "title": "登录",
+    "description": "使用您的账户继续",
+    "loginWithGoogle": "使用 Google 登录",
+    "loginWithGithub": "使用 GitHub 登录",
+    "backToHome": "返回首页",
+    "loginFailed": "登录失败"
+  },
+  "Navbar": {
+    "lightMode": "浅色",
+    "darkMode": "深色",
+    "systemMode": "跟随系统",
+    "theme": "主题",
+    "loading": "加载中...",
+    "appName": "开发模板",
+    "login": "登录",
+    "logout": "登出",
+    "settings": "设置",
+    "userFallbackAvatar": "用户头像",
+    "openMenu": "打开菜单",
+    "switchLanguage": "切换语言"
+  },
+  "quickSelect": "快速选择",
+  "customDate": "自定义日期",
+  "selectDate": "选择日期",
+  "menu": "菜单",
+  "home": "首页",
+  "siteName": "开发模板",
+  "switchLanguage": "切换语言",
+  "toggleTheme": "切换主题",
+  "signOut": "退出登录",
+  "signIn": "登录",
+  "signUp": "注册"
+}
